@@ -5,12 +5,33 @@
  */
 package com.penzasoft.uldbscryptolib;
 
+import java.nio.charset.StandardCharsets;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+import java.security.spec.InvalidKeySpecException;
+
 /**
  *
  * @author ktepin
  */
 public class Main {
-     public static void main(final String[] args) {
-        System.out.println("Main");
-     }
+
+    private static int KEY_LENGTH = 2048; //1024 or 2048 or 4096 
+
+    public static void main(final String[] args) throws NoSuchAlgorithmException, NoSuchProviderException, InvalidKeySpecException {
+        CustomRSA rsa = new CustomRSA(KEY_LENGTH);
+        String payload = "RSA Test text abc123456";
+        byte[] cipher = rsa.encrypt(payload.getBytes(StandardCharsets.UTF_8));
+
+        System.out.println("Example:");
+        System.out.println(payload);
+        System.out.println("Cipher:");
+        System.out.println(cipher);
+        
+        byte[] ex = rsa.decrypt(cipher);
+        System.out.println("Decrypt:");
+        System.out.println(new String(ex, StandardCharsets.UTF_8));
+        
+
+    }
 }
