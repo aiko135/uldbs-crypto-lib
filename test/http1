@@ -1,0 +1,10 @@
+POST /cgi-bin/process.cgi HTTP/1.1
+User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+Host: www.tutorialspoint.com
+Content-Type: application/json; charset=utf-8
+Content-Length: length
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: Keep-Alive
+
+{"userId":"4dcb5698-3bb7-42c0-8444-905d39acb593","mail":"test@gmail.com","score":5.0}

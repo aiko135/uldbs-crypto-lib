@@ -1,0 +1,10 @@
+POST /cgi-bin/process.cgi HTTP/1.1
+User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+Host: www.tutorialspoint.com
+Content-Type: application/json; charset=utf-8
+Content-Length: length
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: Keep-Alive
+
+V7hDRDyKcfkrfoRyV3+UaxfeaPAphGcpFIe59Xr5MBtOy0m3T2tvZK78AH+dY+xDLOMA2IFCptahnvpuOl6FWv44cbZX12A4TVMr1vbDurwNewQ+Z2BYRJp+B47yQpKVqNE0nCTSy57dIPRkjN1rdcGg2DRFM6nENJdkFgUhC8=
